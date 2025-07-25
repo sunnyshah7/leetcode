@@ -1,0 +1,62 @@
+#app file
+
+
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return "Home page"
+
+# import Controller.usercontroller as usercontroller 
+# import Controller.product_controller as productcontroller
+# # if __name__ == "__main__":
+# #     app.run(debug=True)
+
+from Controller import *
+
+
+#controller
+
+from app import app
+from Model.user_model import user_model
+
+obj = user_model()
+
+@app.route("/user/getall")
+def user_signup_controller():
+    return obj.user_getall_model()
+
+@app.route("/user/addone")
+def user_addone_controller():
+    return obj.addone()
+
+
+
+#usermodel
+
+# from app import app
+import mysql.connector
+import json
+
+class user_model():
+    def __init__(self):
+        try:
+            self.con = mysql.connector.connect(host ="localhost" ,user ="root",password ="Vores@1610",database ="flask_db")
+            # self.cur = self.cur.cursor(dictionary=True)
+            self.cur = self.con.cursor(dictionary=True)
+            print("connected")
+        except:
+            print("error found")
+    def user_getall_model(self):
+        self.cur.execute("SELECT * from users")
+        result = self.cur.fetchall()
+        if len(result)> 0:
+            return json.dumps(result)
+        else:
+            return "No Result Found"
+        
+    def user_addone_model(self):
+        self.cur.execute("SELECT * from users")
+        return "user addone details"
