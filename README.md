@@ -5,6 +5,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/sunnyshah7/leetcode/tree/master/0026-remove-duplicates-from-sorted-array) |
+| [0136-single-number](https://github.com/sunnyshah7/leetcode/tree/master/0136-single-number) |
 | [1878-check-if-array-is-sorted-and-rotated](https://github.com/sunnyshah7/leetcode/tree/master/1878-check-if-array-is-sorted-and-rotated) |
 ## Two Pointers
 |  |
@@ -14,4 +15,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0007-reverse-integer](https://github.com/sunnyshah7/leetcode/tree/master/0007-reverse-integer) |
+## Bit Manipulation
+|  |
+| ------- |
+| [0136-single-number](https://github.com/sunnyshah7/leetcode/tree/master/0136-single-number) |
 <!---LeetCode Topics End-->
