@@ -5,7 +5,8 @@ class Solution:
             if nums[i] != nums[i-1]:
                unique_ele += 1
                nums[unique_ele] = nums[i]
-            
+            else:
+                continue
                 
         return unique_ele + 1        
 
