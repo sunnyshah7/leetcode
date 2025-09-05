@@ -5,7 +5,7 @@ class Solution:
         n = len(nums) // 2
         freq = {}
         
-        for num in nums:  # iterate over elements, not indices
+        for num in nums:  
             if num in freq:
                 freq[num] += 1
             else:
