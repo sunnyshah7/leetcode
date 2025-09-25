@@ -63,7 +63,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0387-first-unique-character-in-a-string](https://github.com/sunnyshah7/leetcode/tree/master/0387-first-unique-character-in-a-string) |
 ## Binary Search
-|  |
+|  |<img width="950" height="410" alt="image" src="https://github.com/user-attachments/assets/04fa0887-d82c-42fa-9b81-cffe768c87af" />
+
 | ------- |
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/sunnyshah7/leetcode/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
 <!---LeetCode Topics End-->
